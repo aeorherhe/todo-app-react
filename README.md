@@ -1,6 +1,6 @@
 # Frontend Mentor - Todo app
 
-![Design preview for the Todo app coding challenge](/images/desktop-preview.jpg)
+![Design preview for the Todo app coding challenge](/public/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -32,8 +32,8 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 
 ### Links
 
-- Solution URL: [solution](https://github.com/aeorherhe/multi-step-form-react.git)
-- Live Site URL: [live site](https://aeorherhe-multi-step-form-react.netlify.app)
+- Solution URL: [solution](https://github.com/aeorherhe/todo-app-react.git)
+- Live Site URL: [live site](https://aeorherhe-todo-app-react.netlify.app)
 
 ### Built with
 
