@@ -70,11 +70,7 @@ body {
   height: 100vh;
 }
 
- 
-
-
-
-  .btn{
+.btn{
     background-color: var(--Dark-Blue);
     color: var(--White);
     text-transform: capitalize;
@@ -84,7 +80,7 @@ body {
     letter-spacing: 0.1rem;
     cursor: pointer;
     border-radius: 0.5rem;
-  }
+}
 
   .list-empty{
     text-align: center;

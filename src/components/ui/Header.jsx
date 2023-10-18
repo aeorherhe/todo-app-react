@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDarkMode } from "../../features/themesSlice";
 
@@ -7,7 +7,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   return (
-    <StyledHeader>
+    <StyledHeader type={darkMode.toString()}>
       <h1>todo</h1>
       <div
         className="themes"
@@ -49,11 +49,30 @@ const StyledHeader = styled.header`
     position: absolute;
     width: 100%;
     height: 40vh;
-    background-image: url("/images/bg-desktop-light.jpg");
+    background-image: url("/images/bg-mobile-light.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
     inset: 0;
   }
+
+  @media (min-width: 50rem) {
+    .hero {
+      background-image: url("/images/bg-desktop-light.jpg");
+    }
+  }
+
+  ${(props) =>
+    props.type === "true" &&
+    css`
+      .hero {
+        background-image: url("/images/bg-mobile-dark.jpg");
+      }
+      @media (min-width: 50rem) {
+        .hero {
+          background-image: url("/images/bg-desktop-dark.jpg");
+        }
+      }
+    `}
 `;
