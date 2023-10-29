@@ -22,7 +22,7 @@ export default App;
 /************************ styled component ********************************/
 const StyledApp = styled.main`
   width: 95vw;
-  max-width: 52rem;
+  max-width: 45rem;
   margin: 0 auto;
 
   .list {
